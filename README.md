@@ -1,3 +1,5 @@
+### **How to run docker-compose.yml file?**
+---
 Super easy! 🚀  
 Here’s how you run the `docker-compose.yml` you just got:
 
@@ -51,8 +53,11 @@ Make sure you have installed:
 
 Would you also like a few test commands to **create a topic** and **produce/consume** messages from command line?  
 I can give those too if you want! 🎯
+
 ---
+
 ### **kafka gets down because zookeeper is not up properly what to do?**
+
 ---
 Got it — you're facing a **common issue**! 🔥  
 Kafka tries to connect to Zookeeper **before** Zookeeper is fully up and ready, so Kafka fails and crashes.
