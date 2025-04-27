@@ -120,6 +120,56 @@ Here’s the full Kafka service now:
 🔵 This makes Kafka **wait** until Zookeeper is actually listening on port 2181 before starting Kafka inside the container.
 
 ---
+
+### **Run docker-compose file with different name**
+
+Ah, you want to **run a Docker Compose file** that is **NOT** named the default `docker-compose.yml`, right? 🔥  
+Easy!
+
+---
+
+### 🛠️ Run a custom docker-compose file:
+
+Suppose your file name is `kafka-setup.yml`.
+
+Then run:
+
+```bash
+docker-compose -f kafka-setup.yml up
+```
+
+✅ `-f` tells Docker Compose which file to use.
+
+---
+
+### ⚡ Other options:
+
+- To run it in **detached mode** (background):
+  ```bash
+  docker-compose -f kafka-setup.yml up -d
+  ```
+
+- To **bring it down** later:
+  ```bash
+  docker-compose -f kafka-setup.yml down
+  ```
+
+---
+
+### ✨ Tip:
+You can even **combine multiple files** by adding more `-f` flags if needed!
+
+Example:
+```bash
+docker-compose -f common.yml -f kafka-setup.yml up
+```
+(First file is the "base", second can override parts.)
+
+---
+
+Want me to also show how you can **rename services** dynamically while running? (using `--project-name`) 🚀  
+Example: instead of container being called `kafka-ui`, you could name it `mykafkaui` automatically!  
+Let me know! 🎯
   
 ✅ **Summary**:
 - Add `restart: on-failure` (recommended minimum)
