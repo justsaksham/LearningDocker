@@ -51,11 +51,6 @@ Make sure you have installed:
 
 ---
 
-Would you also like a few test commands to **create a topic** and **produce/consume** messages from command line?  
-I can give those too if you want! 🎯
-
----
-
 ### **kafka gets down because zookeeper is not up properly what to do?**
 
 ---
@@ -131,7 +126,3 @@ Here’s the full Kafka service now:
 - Add the `entrypoint` wait script for **more reliability**
 
 ---
-
-Would you like me to also show you a version using **healthcheck** (cleaner but a bit longer)?  
-(If you're making a production-grade setup!) 🚀  
-Tell me!
